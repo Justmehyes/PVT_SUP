@@ -25,3 +25,39 @@ WEBSITE_LIST = {"https://www.youtube.com/":
                   }
                  }
                 }
+
+WEBSITE_LIST = {"https://www.speedtest.net":
+                {"specifics":"ablock=true;",
+                 "main-menu-link":'refresh_sens:id;consent_blackbar',
+                 "endpoints":
+                 {
+                    "Login-page": 'direct-link;login', 
+                    "Apps": 'partial link text;Apps',
+                    "About": 'partial link text;About',
+                    "Analysis": 'partial link text;Analysis',
+                 },
+                 "sub-endpoints":{
+                     "Apps": {"Speedtest for IOS": 'partial link text;Speedtest for iOS',
+                              "Speedtest for Android": 'partial link text;Speedtest for Android',
+                              "Speedtest for Windows": 'partial link text;Speedtest for Windows',
+                              },
+                     "About": {"iOS": 'partial link text;iOS',
+                               "Android": 'partial link text;Android',
+                               "macOS": 'partial link text;macOS',
+                     },
+                 }   
+                } 
+                }
+
+WEBSITE_LIST = {"https://wwww.foxnews.com":
+                {"specifics":"ablock=true;",
+                 "main-menu-link":'refresh_sens:id;Fox News',
+                 "endpoints":
+                 {
+                     "Login-page": 'partial link text;Log In', #direct link does not work.
+
+                 },
+
+                }
+                }
+
