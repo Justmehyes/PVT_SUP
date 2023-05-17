@@ -51,13 +51,28 @@ WEBSITE_LIST = {"https://www.speedtest.net":
 
 WEBSITE_LIST = {"https://wwww.foxnews.com":
                 {"specifics":"ablock=true;",
-                 "main-menu-link":'refresh_sens:id;Fox News',
+                 "main-menu-link":'css selector;a.logo[href="https://www.foxnews.com"]',
                  "endpoints":
                  {
                      "Login-page": 'partial link text;Log In', #direct link does not work.
-
+                     "Politics": 'css selector;a[href="https://www.foxnews.com/politics"]',
+                     "World": 'css selector;a[href="https://www.foxnews.com/world"]',
                  },
+                #sub-endpoints unavailable
+                }
+                }
 
+WEBSITE_LIST = {"https://www.aol.com":
+                {"specifics":"ablock=true;",
+                 "main-menu": 'css selector;a.logo-link',
+                 "endpoints":
+                 {
+                     #
+                 },
+                  
                 }
-                }
+
+}
+
+
 
