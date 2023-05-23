@@ -23,10 +23,9 @@ WEBSITE_LIST = {"https://www.youtube.com/":
                           
                       },
                   }
-                 }
-                }
-
-WEBSITE_LIST = {"https://www.speedtest.net":
+                 },
+                 
+                 "https://www.speedtest.net":
                 {"specifics":"ablock=true;",
                  "main-menu-link":'refresh_sens:id;consent_blackbar',
                  "endpoints":
@@ -46,10 +45,9 @@ WEBSITE_LIST = {"https://www.speedtest.net":
                                "macOS": 'partial link text;macOS',
                      },
                  }   
-                } 
-                }
+                },
 
-WEBSITE_LIST = {"https://wwww.foxnews.com":
+                "https://wwww.foxnews.com":
                 {"specifics":"ablock=true;",
                  "main-menu-link":'css selector;a.logo[href="https://www.foxnews.com"]',
                  "endpoints":
@@ -59,10 +57,9 @@ WEBSITE_LIST = {"https://wwww.foxnews.com":
                      "World": 'css selector;a[href="https://www.foxnews.com/world"]',
                  },
                 #sub-endpoints unavailable
-                }
-                }
+                },
 
-WEBSITE_LIST = {"https://www.aol.com":
+                "https://www.aol.com":
                 {"specifics":"ablock=true;",
                  "main-menu": 'css selector;a.logo-link',
                  "endpoints":
@@ -70,11 +67,8 @@ WEBSITE_LIST = {"https://www.aol.com":
                      # website mostly uses xpath. Not ideal for this project
                  },
                   
-                }
-
-                }
-
-WEBSITE_LIST = {"https://www.sharepoint.com":
+                },
+                "https://www.sharepoint.com":
                 {"specifics":"ablock=true;",
                  "main-menu": 'css selector;a#uhfLogo',
                  "endpoints":
@@ -89,16 +83,59 @@ WEBSITE_LIST = {"https://www.sharepoint.com":
                        "Windows": {"Get windows11": 'css selector;a.c-call-to-action',         
                   },
                 }
-                }
-                }
+                },
 
-WEBSITE_LIST = {"https://www.airbnb.ca":
+                "https://www.airbnb.ca":
                 {"specifics":"ablock=true;",
                  "main-menu-link":"css selector;button[aria-label='Close']", #opening this webpage always shows a pop up.
-            
+                 "endpoints":
+                 {
+                     "Privacy": 'partial link text;Privacy',
+                     "Terms": 'partial link text;Terms',
+                     "Sitemap": 'partial link text;Sitemap',
                  },
-             
-                 }   
-                
-                
 
+                 "sub-endpoints":{
+                     "Airbnb Privacy": {
+                        "Privacy Policy": 'partial link text;Privacy Policy for the United States',
+                        "Privacy Policy": 'partial link text;Privacy Policy for Outside the U.S. (English)',
+                        "Privacy Policy": 'partial link text;Privacy Policy for Outside the U.S. (French)',
+                        "Privacy Policy": 'partial link text;Cookie Policy',
+                     },
+                     "Terms of Service": {
+                        "Schedule": 'partial link text;Schedule 1',
+                        "Payment Terms of Service": 'partial link text;Payments Terms of Service',
+                        "Hosting": 'partial link text;5. Hosting on Airbnb.',
+
+                     },
+                 }
+                 },
+
+                 "https://www.bestbuy.com":
+                {"specifics":"ablock=true;",
+                 "main-menu-link": ["css selector;img[src='https://www.bestbuy.com/~assets/bby/_intl/landing_page/images/maps/canada.svg']", 'css selector;.logo_3ePCc'],
+                #Need to press Location before going into the site.
+                 "endpoints":
+                 {
+                     "Account": 'partial link text;Account',
+                     "Stores": 'partial link text;Stores',
+                     "Cart": 'partial link text;Cart',
+                 },
+
+                 "sub-endpoints":{
+                     "Account": {
+                        "Sign in": 'css selector;svg._13Pgk.create-account-link-chevron._2kWmn',
+                        "Password show text": 'partial link text:Show',
+                     },
+                     "Stores":{
+                         "Browsing location": 'partial link text;browse all locations.',
+                     },
+                     "Cart": {
+                         "quick and easy": 'partial link text;Quick and Easy Store Pickup',
+                         "Freeshipping": 'partial link text;Free shipping over $35',
+                         "Low Price": 'partial link text;Low Price Guarantee',
+                     },
+                 }
+                 },
+
+                }

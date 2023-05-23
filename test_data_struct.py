@@ -233,8 +233,8 @@ if __name__ == "__main__":
     #test_struct("https://www.youtube.com/")
 
 
-    website_to_test = "https://www.airbnb.ca"
-    seleniumsselector_list = ["css selector;button[aria-label='Close']"]
+    website_to_test = "https://www.skype.com"
+    seleniumsselector_list = ["partial link text;a#cUhfCatLogo.c-logo.c-cat-logo[href='https://www.skype.com']"]
     test_ss_list(website_to_test, seleniumsselector_list, c_driver)
     #test_struct("https://www.speedtest.net/")
 
