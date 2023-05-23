@@ -67,12 +67,38 @@ WEBSITE_LIST = {"https://www.aol.com":
                  "main-menu": 'css selector;a.logo-link',
                  "endpoints":
                  {
-                     #
+                     # website mostly uses xpath. Not ideal for this project
                  },
                   
                 }
 
-}
+                }
 
+WEBSITE_LIST = {"https://www.sharepoint.com":
+                {"specifics":"ablock=true;",
+                 "main-menu": 'css selector;a#uhfLogo',
+                 "endpoints":
+                 {
+                     "Login-page": 'css selector;div#mectrl_headerPicture',
+                     "Teams": 'css selector;a#l0_Teams.c-uhf-nav-link',
+                     "Windows":'partial link text;Windows',
+                 },
+                  "sub-endpoints":{
+                      "Teams": {"See plans and pricing": 'class name;link-group',
+                                },
+                       "Windows": {"Get windows11": 'css selector;a.c-call-to-action',         
+                  },
+                }
+                }
+                }
 
+WEBSITE_LIST = {"https://www.airbnb.ca":
+                {"specifics":"ablock=true;",
+                 "main-menu-link":"css selector;button[aria-label='Close']", #opening this webpage always shows a pop up.
+            
+                 },
+             
+                 }   
+                
+                
 

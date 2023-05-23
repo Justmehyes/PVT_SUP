@@ -167,7 +167,10 @@ def test_ss_list(website_url:str, ss_list:list, driver):
             special, type_find = type_find.split(":")
             special_list = special.split["~"]
         except:
-            pass
+            try:
+                special_list = special
+            except:
+                pass
         print(count)
         count+=1
         #input()
@@ -230,8 +233,8 @@ if __name__ == "__main__":
     #test_struct("https://www.youtube.com/")
 
 
-    website_to_test = "https://aol.ca"
-    seleniumsselector_list = ['css selector;div.hamburger-icon > svg']
+    website_to_test = "https://www.airbnb.ca"
+    seleniumsselector_list = ["css selector;button[aria-label='Close']"]
     test_ss_list(website_to_test, seleniumsselector_list, c_driver)
     #test_struct("https://www.speedtest.net/")
 
