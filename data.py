@@ -138,4 +138,91 @@ WEBSITE_LIST = {"https://www.youtube.com/":
                  }
                  },
 
-                }
+                 "https://www.skype.com":
+                 {"specifics":"ablock=true;",
+                  "main-menu-link":'partial link text;Skype',
+                  "endpoints":
+                  {
+                      "Downloads": 'partial link text;Downloads',
+                      "Skype to Phone": 'partial link text;Skype to Phone',
+                      "Skype Number": 'partial link text;Skype Number',
+                  },
+                  
+                  "sub-endpoints":{
+                      "Downloads":{
+                          "Skype Download": 'partial link text;Get Skype for Windows 10 & 11',
+                          "Open Skype": 'partial link text;Skype Insider Program',
+                          "Mobile Device": 'partial link text;Mobile',
+                     },
+                      "Skype to Phone": {
+                          "United states": 'partial link text;Continue',
+                          "India": "css selector;button.IzjkL._2Y_WL.FiOTW[data-bi-id='buyNow-in-mixed-800-ft-variantD-showByNowBtn-false']",
+                          "N.A": 'partial link text;Try free for a month',
+                     },
+                     "Skype Number":{
+                         "U.K": 'partial link text;United Kingdom',
+                         "Germany": 'partial link text;Germany',
+                         "HongKong SAR": 'partial link text;Hong Kong SAR',
+                     },
+                      },
+                     
+                 },
+
+                 "https://wwww.flickr.com":
+                 {"specifics":"ablock=true;",
+                  "main-menu": 'css selector;a.main-logo.new-logo',
+                  "endpoints":
+                  {
+                      "login": 'partial link text;Log In',
+                      "About page": 'partial link text;About',
+                      "Jobs": 'partial link text;Jobs',
+                  },
+                  "sub-endpoints":{
+                    "About": {
+                    "FlickrBlog": 'partial link text;Flickr blog',
+                    "Guidelines": 'partial link text;Community guidelines',
+                    "FAQ": 'partial link text;Visit our FAQ', 
+                  },
+                    "Jobs": {
+                      "Openings": 'partial link text;View openings',
+                      "Upload": 'partial link text;Upload',
+                      "Login button": 'partial link text;Log In', 
+                    }
+                  },
+                 },
+
+                "https://wwww.gamefaqs.com":
+                 {"specifics":"ablock=true;",
+                  "main-menu":'partial link text;GameFAQs',
+                  "endpoints":
+                  {
+                      "login": 'css selector;a[href="/user/login"]',
+                      "Boards": 'partial link text;Boards',
+                      "News": 'partial link text;News',
+                  },
+                  "sub-endpoints": {
+                      "Boards": {
+                          "GmaeBoards": 'partial link text;Game Boards',
+                          "Community Boards": 'partial link text;Community Boards',
+                          "More boards": 'partial link text;Special Interest Boards',
+                      },
+                      "News": {
+                          "Releaases": 'partial link text;More Upcoming Releases >>',
+                          "More Releases": 'partial link text;More New Releases >>',
+                          "Contribution": 'partial link text; More New Contributions >>',
+                      },
+                  },
+                },
+
+                "https://www.sourceforge.net":
+                {"specifics":"ablock=true;",
+                 "main-menu":"css selector;img.sf-logo-full",
+                 "endpoints":
+                 {
+                     "login": 'partial link text;Login',
+                     
+                 }
+                
+                },
+}
+              
