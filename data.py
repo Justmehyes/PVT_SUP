@@ -220,9 +220,77 @@ WEBSITE_LIST = {"https://www.youtube.com/":
                  "endpoints":
                  {
                      "login": 'partial link text;Login',
-                     
+                     "Join": 'partial link text;Join & Create',
+                     "Browse": 'partial link text;Browse Business Software',
+                     "Open Software": 'partial link text;Browse Open Source Software',
+                 },
+                 "sub-endpoints": {
+                     "Join": {
+                        "Create": 'partial link text;Create Your Project Now',
+                        "Apache": 'partial link text;Apache OpenOffice',
+                        "PortableApps": 'partial link text;PortableApps',
+                     },
+                     "Browse":{
+                         "website": 'partial link text;monday.com',
+                         "website": 'partial link text;Miro',
+                         "website": 'partial link text;Acronis Cyber Protect',
+                     },
+                     "Open Software": {
+                         "Software": "partial link text;Microsoft's TrueType core fonts",
+                         "Software": 'partial link text;SAP NetWeaver Server Adapter for Eclipse',
+                         "Software": 'partial link text;AutoClicker',
+                     }
                  }
                 
                 },
-}
+                "https://www.telegram.org":
+                {"specifics":"ablock=true;",
+                 "main-menu": 'css selector;div.tl_main_logo.play',
+                 "endpoints":
+                 {
+                     "telegram for android": 'css selector;a.tl_main_download_link.tl_main_download_link_android',
+                     "telegram for Desktop": 'css selector;a.tl_main_download_desktop_link.tl_main_download_link_td',
+                     "News": 'partial link text;Recent News',
+                 },
+                 "sub-endpoints":{
+                     "News":{
+                         "twitter": 'css selector;a[data-track="Follow/Twitter"]',
+                         "TelegramNews": 'partial link text;Power Saving Mode and More',
+                         "TelegramNews": 'partial link text;Shareble Chat Folders, Custom Wallpapers and More',
+                     },
+                     "Telegram for android":{
+                         "Download": 'partial link text;Download Telegram',
+                         "Steps to download": 'partial link text;this page',
+                         "Updates": 'partial link text;telegram.org',
+                     },
+                     "Telegram for Desktop":{
+                         "Windows": 'partial link text;Windows',
+                         "Portable Version": 'partial link text;Portable version',
+                         "Portable Version": 'partial link text;Show all platforms',
+                     },
+                 },
+                },
+
+                "https://www.researchgate.net":
+                 {"specifics":"ablock=true;",
+                  "main-menu": 'css selector;img[alt="ResearchGate"]',
+                  "endpoints":
+                  {
+                      "Login": 'css selector;a.index-header__log-in',
+                      "Join for free": 'partial link text;Join for free',
+                      "Careers": 'partial link text;Careers',
+                  },
+                  "subendpoints":{
+                    "Careers": {
+                        "Security": 'partial link text;Security',
+                        "Press": 'partial link text;Press',
+                        "Imprint": 'partial link text;Imprint',
+                    },
+                    "Join for free":{
+
+                    }, 
+                  },  
+                     
+                 },
+            }
               
