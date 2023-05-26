@@ -292,5 +292,35 @@ WEBSITE_LIST = {"https://www.youtube.com/":
                   },  
                      
                  },
-            }
+                 "https://wwww.leagueoflegends.com":
+                 {"specifics":"ablock=true;",
+                  #"main-menu": '',
+                   "endpoints":
+                   {
+                     "Log in": "partial link text;SIGN IN",
+                     "Patch": "css selector;a[data-testid='riotbar:desktopNav:link-internal-patch_notes']", 
+                     "Game": "css selector;a[data-testid='riotbar:desktopNav:link-internal-game']",
+                     "Champions": "css selector;a[data-testid='riotbar:desktopNav:link-internal-champions']",  
+                   },  
+                   "sub-endpoints":{
+                      "Patch":{
+                        "Loadmore": "css selector;button[data-testid='articlelist:loadmorebutton']",
+                        "About":  "partial link text;ABOUT LEAGUE OF LEGENDS",
+                        "Help us improve": "partial link text;Help Us Improve",
+                      },
+                      "Game":{
+                        "Next arrow": "css selector;svg.style__Arrow-wb6pjz-8-SvgRight.gYyJfv",
+                      }, 
+                      "Champions":{
+                        "Assassins": "css selector;button[data-testid='navigation:button-1']",
+                        "Fighters": "css selector;button[data-testid='navigation:button-2']", 
+                        "Mages": "css selector;button[data-testid='navigation:button-3']",
+                        "Marksmen": "css selector;button[data-testid='navigation:button-4']",
+                        "Supports": "css selector;button[data-testid='navigation:button-5']",
+                        "Tanks": "css selector;button[data-testid='navigation:button-6']", 
+                      },
+
+                   },
+                 },
+                        }
               
