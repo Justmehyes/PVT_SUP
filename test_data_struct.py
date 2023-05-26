@@ -233,11 +233,12 @@ if __name__ == "__main__":
     #test_struct("https://www.youtube.com/")
 
 
-    website_to_test = "https://www.researchgate.net"
-    seleniumsselector_list = ['css selector;img[alt="ResearchGate"]', 'partial link text;Careers', 'partial link text;Security'] 
+    website_to_test = "https://www.thesaurus.com"
+    seleniumsselector_list = ["css selector;a#thesaurus-tab", "refresh_sens:partial link text;Meanings"] 
     test_ss_list(website_to_test, seleniumsselector_list, c_driver)
     #test_struct("https://www.speedtest.net/")
 
 
     pass
+
 
